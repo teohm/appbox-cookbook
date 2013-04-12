@@ -8,7 +8,7 @@
 #
 
 def user_exists?(username)
-  !!Etc.getpwnam(username)
+  !!Etc.getpwnam(username) rescue false
 end
 
 unless user_exists? node["appbox"]["apps_user"]
