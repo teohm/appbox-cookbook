@@ -33,6 +33,7 @@ end
 
 node.default["authorization"]["sudo"]["groups"] = [
   "sudo",
+  node["appbox"]["deploy_user"],  # TODO workaround enable deploy user to restart server
   node["appbox"]["devops_user"]
 ]
 node.default["authorization"]["sudo"]["passwordless"] = true
