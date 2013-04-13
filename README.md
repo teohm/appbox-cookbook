@@ -6,7 +6,7 @@ Provides a set of recipes to setup a **base app server**:
  * setup base directory to store apps
  * install common sysadmin tools
 
-# Install
+## Install
 
 This cookbook is not yet available at Opscode Community site.
 
@@ -16,7 +16,7 @@ To install with **Berkshelf**, add this into `Berksfile`:
 cookbook 'appbox', github: 'teohm/appbox-cookbook'
 ```
 
-# Usage
+## Usage
 
 To setup a base app server, 
 
@@ -28,7 +28,9 @@ include_recipe "appbox::default"
 
 And override attributes to customize the cookbook.
 
-# Attributes
+See also [teohm/kitchen-sample](https://github.com/teohm/kitchen-example) for `appbox` usage example with chef-solo.
+
+## Attributes
 
 You **should** set these attributes:
 
@@ -42,7 +44,7 @@ You may customize these attributes:
  * `node["appbox"]["apps_user"]` (default: `"apps"`) - apps account, to run apps (no login, not sudoer, member of apps group).
  * `node["appbox"]["apps_dir"]` (default: `"/home/apps"`) - base directory to store apps, writable (with +SGID) by apps group members.
 
-# Recipes
+## Recipes
 
  * `appbox::default` - run all recipes.
  * `appbox::package_update` - update software packages (with `apt-get update`).
@@ -54,16 +56,16 @@ You may customize these attributes:
    * git
    * tmux
 
-# Requirements
+## Requirements
 
-## Supported Platforms
+### Supported Platforms
 
  * `ubuntu` - tested on Ubuntu 12.10
  * `debian` - should work
  
 Pull requests, issue and test reports are welcomed to better support your platform.
  
-## Cookbook Dependencies
+### Cookbook Dependencies
 
  * Depends on these cookbooks:
    * apt
@@ -74,7 +76,7 @@ Pull requests, issue and test reports are welcomed to better support your platfo
    * git
    * tmux
 
-# License and Authors
+## License and Authors
 
  * Author:: Huiming Teo <teohuiming@gmail.com>
 
