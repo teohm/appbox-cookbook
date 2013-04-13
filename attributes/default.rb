@@ -1,4 +1,4 @@
-default["appbox"]["devops_keys"] = []
+default["appbox"]["admin_keys"] = []
 default["appbox"]["deploy_keys"] = []
 default["appbox"]["apps_dir"] = "/home/apps"
 
