@@ -8,12 +8,10 @@ Provides a set of recipes to setup a **base app server**:
 
 ## Install
 
-This cookbook is not yet available at Opscode Community site.
-
 To install with **Berkshelf**, add this into `Berksfile`:
 
 ```
-cookbook 'appbox', github: 'teohm/appbox-cookbook'
+cookbook 'appbox'
 ```
 
 ## Usage
