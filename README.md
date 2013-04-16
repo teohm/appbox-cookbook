@@ -1,4 +1,4 @@
-# Chef cookbook - appbox (v0.1.0)
+# Chef cookbook - appbox (v0.1.1)
 
 Provides a set of recipes to setup a **base app server**:
 
