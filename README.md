@@ -37,7 +37,7 @@ You **should** set these attributes:
 
 You may customize these attributes:
 
- * `node["appbox"]["admin_user"]` (default: `"admin"`) - admin account, to perform sysadmin tasks (login with SSH key, passwordless sudo, member of apps group). 
+ * `node["appbox"]["admin_user"]` (default: `"devops"`) - admin account, to perform sysadmin tasks (login with SSH key, passwordless sudo, member of apps group). 
  * `node["appbox"]["deploy_user"]` (default: `"deploy"`) - deploy account, to deploy apps (login with SSH key, passwordless sudo, member of apps group).
  * `node["appbox"]["apps_user"]` (default: `"apps"`) - apps account, to run apps (no login, not sudoer, member of apps group).
  * `node["appbox"]["apps_dir"]` (default: `"/home/apps"`) - base directory to store apps, writable (with +SGID) by apps group members.
